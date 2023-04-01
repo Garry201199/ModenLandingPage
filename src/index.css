@@ -1,14 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-@layer base {
-  @apply 
-  .trapezoid {
-    height: 0;
-    width: 150px;
-    /* border-bottom: 100px solid #32557f;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent; 
-  
-*/
+* {
+  scroll-behavior: smooth;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}

@@ -41,7 +41,7 @@ const Navbar = () => {
               animate={"animate"}
               exit={"exit"}
               className={`flex
-          p-6 bg-[#2c2c2c] absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl        `}
+          p-6 bg-[#2c2c2c] absolute top-20 z-50 right-0 mx-4 my-2 min-w-[140px] rounded-xl        `}
             >
               <ul className=" sm:hidden w-full flex flex-col justify-center items-center  ">
                 {navLinks &&
