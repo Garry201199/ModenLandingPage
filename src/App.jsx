@@ -3,7 +3,7 @@ import styles from './styles'
 
 function App() { 
   return (
-    <div className="bg-[#00040f] overflow-hidden text-white w-full ">
+    <div className="bg-[#00040f] font-raleway overflow-hidden text-white w-full ">
       <div className={`${ styles.flexCenter }  ${styles.paddingX} `}>
         <div className={`${styles.boxwidth}`}>
           <Navbar />

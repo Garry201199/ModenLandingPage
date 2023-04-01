@@ -10,7 +10,7 @@ const GetStarted = () => {
       <p
         // onMouseEnter={()=>discoColors()}
         // onMouseLeave={()=>discoColors()}
-        className={` ${styles.tras} text-left text-[18px] flex    flex-col  `}
+        className={` ${styles. trans} text-left text-[18px] flex    flex-col  `}
       >
         {" "}
         <span className="flex gap-x-1 ">

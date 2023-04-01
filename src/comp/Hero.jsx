@@ -1,7 +1,8 @@
 import React, { useMemo } from "react";
-import {discount, robot } from "../assets";
+import {discount, robot , robotMin } from "../assets";
 import styles from "../styles";
 import GetStarted from "./GetStarted";
+import ProgressiveImage from "./ProgressiveImage";
 
 const Hero = () => {
   const randoms = useMemo(
@@ -25,7 +26,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={` flex md:flex-row flex-col items-center justify-center  ${styles.paddingY} font-raleway  `}
+      className={` flex md:flex-row flex-col items-center justify-center  ${styles.paddingY}    `}
     >
       <div className="absolute w-52 h-52 z-0 -left-14 bg-slate-100/30 blur-3xl    rounded-full "></div>
       {/* <div className=" absolute z-0 w-[50%] h-[50%] top-12 right-0 bg-pink-500/10  rounded-full blur-3xl "></div> */}
@@ -74,11 +75,14 @@ border-l-[150px] border-solid border-r-transparent
 border-l-transparent border-b-cyan-300/40 rotate-180 blur-3xl   "
           ></div>
         </div> */}
-        <img
-          src={robot}
-          className="z-10 object-contain h-[100%] w-[100%] relative "
-          alt="robot"
-        />
+        <ProgressiveImage
+        imgSrc={robot}
+        previewSrc={robotMin}
+        width={800}
+        height={500}
+        className="z-10 object-contain h-[100%] w-[100%] relative "
+      />
+        
       </div>
     </section>
   );

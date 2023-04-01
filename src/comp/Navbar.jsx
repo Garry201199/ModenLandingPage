@@ -14,7 +14,7 @@ const Navbar = () => {
         {navLinks &&
           navLinks.map((navLink, index) => (
             <li
-              className={`font-raleway font-normal text-white
+              className={`  font-normal text-white
              ${
                index === navLinks.length - 1 ? "mr-0" : "mr-10"
              }  cursor-pointer text-[16px] `}
@@ -27,7 +27,7 @@ const Navbar = () => {
 
       <div className="sm:hidden flex flex-1 justify-end items-center ">
         <img
-          className={`${styles.tras} object-contain w-[28px] h-[28px] `}
+          className={`${styles. trans} object-contain w-[28px] h-[28px] `}
           onClick={() => setToggle((toggle) => !toggle)}
           src={`${toggle ? close : menu}`}
           alt=""
@@ -47,7 +47,7 @@ const Navbar = () => {
                 {navLinks &&
                   navLinks.map((navLink, index) => (
                     <li
-                      className={`font-raleway font-normal text-white
+                      className={`  font-normal text-white
               ${
                 index === navLinks.length - 1 ? "mb-0" : "mb-10"
               }  cursor-pointer text-[16px] `}

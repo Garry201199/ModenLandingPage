@@ -23,6 +23,7 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import robotMin from "./robotMin.png";
 
 export {
   airbnb,
@@ -41,6 +42,7 @@ export {
   close,
   google,
   apple,
+  robotMin,
   arrowUp,
   discount,
   facebook,
