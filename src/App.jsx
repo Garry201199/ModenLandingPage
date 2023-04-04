@@ -15,8 +15,7 @@ function App() {
           <Hero/>
         </div>
       </div>
-       
-
+      
        <div className={`${styles.paddingX}   ${styles.flexStart}  `}>
         <div className={`${styles.boxwidth}`}>
 

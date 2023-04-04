@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { navLinks } from "../utils/data";
 import { close, logo, menu } from "../assets";
 import styles from "../styles";
+import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,20 +15,29 @@ const Navbar = () => {
         {navLinks &&
           navLinks.map((navLink, index) => (
             <li
-              className={`  font-normal text-white
+              className={`font-normal text-white
              ${
                index === navLinks.length - 1 ? "mr-0" : "mr-10"
              }  cursor-pointer text-[16px] `}
               key={navLink.id}
             >
-              <a href="">{navLink.title}</a>
+              <Link
+                activeClass="active"
+                to={navLink.id}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                {navLink.title}
+              </Link>
             </li>
           ))}
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center ">
         <img
-          className={`${styles. trans} object-contain w-[28px] h-[28px] `}
+          className={`${styles.trans} object-contain w-[28px] h-[28px] `}
           onClick={() => setToggle((toggle) => !toggle)}
           src={`${toggle ? close : menu}`}
           alt=""
@@ -41,8 +51,9 @@ const Navbar = () => {
               animate={"animate"}
               exit={"exit"}
               className={`flex
-          p-6 bg-[#2c2c2c] absolute top-20 z-50 right-0 mx-4 my-2 min-w-[140px] rounded-xl        `}
+            p-6  border border-slate-500/40 bg-slate-800/20 backdrop-blur-lg absolute top-20 z-50 right-0 mx-4 my-2 min-w-[140px] rounded-xl        `}
             >
+              {/* bg-[#2c2c2c]/30  */}
               <ul className=" sm:hidden w-full flex flex-col justify-center items-center  ">
                 {navLinks &&
                   navLinks.map((navLink, index) => (
