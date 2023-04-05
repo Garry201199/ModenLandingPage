@@ -23,10 +23,14 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import robotMin from "./robotMin.png";
+import robot1 from "./robot1.png";
 import quote from "./quote.svg";
+import bill1 from "./bill Compressed.png";
+import card1 from "./card1.png";
 
 export {
+  card1,
+  bill1,
   quote,
   airbnb,
   bill,
@@ -44,7 +48,7 @@ export {
   close,
   google,
   apple,
-  robotMin,
+  robot1,
   arrowUp,
   discount,
   facebook,

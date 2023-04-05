@@ -1,13 +1,20 @@
 import React from 'react'
 import styles from '../styles'
-import { bill ,apple , google } from '../assets'
+import { bill,bill1 ,apple , google } from '../assets'
+import ProgressiveImage from './ProgressiveImage'
 
 
 const CardDeal = () => {
   return (
     <section className={`${styles.paddingY}  gap-y-6 flex sm:flex-row flex-col-reverse items-center justify-center   `}>
       <div className="flex flex-1 md:p-6  gap-y-6 flex-start  ">
-        <img src={bill} alt="bill" />
+      <ProgressiveImage
+        imgSrc={bill}
+        previewSrc={bill1}
+        width={800}
+        height={500}
+        className="z-10 object-contain h-[100%] w-[100%] relative "
+      />
       </div>
       <div className="flex flex-1  flex-col gap-y-6 flex-start  ">
         <p  className='md:text-[3.5rem] sm:text-[2.5rem] text-[2rem] leading-normal sm:leading-tight font-bold' >Easily control your billing & invoicing.</p>

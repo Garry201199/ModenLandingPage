@@ -1,7 +1,8 @@
 import React from 'react'
-import { card } from '../assets'
+import { card, card1 } from '../assets'
 import styles from '../styles'
 import Button from './Button'
+import ProgressiveImage from './ProgressiveImage'
 
 const Billing = () => {
   return (
@@ -12,7 +13,13 @@ const Billing = () => {
         <Button/>
       </div>
       <div className="flex flex-1 md:p-6 flex-col gap-y-6 flex-start  ">
-        <img src={card} alt="card" />
+      <ProgressiveImage
+        imgSrc={card}
+        previewSrc={card1}
+        width={800}
+        height={500}
+        className="z-10 object-contain h-[100%] w-[100%] relative "
+      />
       </div>
     </section>
   )

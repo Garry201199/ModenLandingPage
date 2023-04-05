@@ -1,8 +1,9 @@
 import React, { useMemo } from "react";
-import {discount, robot , robotMin } from "../assets";
+import {discount, robot , robot1 } from "../assets";
 import styles from "../styles";
 import GetStarted from "./GetStarted";
 import ProgressiveImage from "./ProgressiveImage";
+
 
 const Hero = () => {
   const randoms = useMemo(
@@ -77,7 +78,7 @@ border-l-transparent border-b-cyan-300/40 rotate-180 blur-3xl   "
         </div> */}
         <ProgressiveImage
         imgSrc={robot}
-        previewSrc={robotMin}
+        previewSrc={robot1}
         width={800}
         height={500}
         className="z-10 object-contain h-[100%] w-[100%] relative "
@@ -89,3 +90,4 @@ border-l-transparent border-b-cyan-300/40 rotate-180 blur-3xl   "
 };
 
 export default Hero;
+

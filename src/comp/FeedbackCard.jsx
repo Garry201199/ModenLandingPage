@@ -1,11 +1,14 @@
 import React from 'react'
 import {people01,people02,people03, quote } from '../assets'
 import styles from '../styles'
+import {motion} from 'framer-motion'
 const FeedbackCard = ({item}) => {
   const {content,name,img,title} = item
   
   return (
-    <div className={`
+    <motion.div
+    whileHover={{scale:1.03}}
+    className={`
     md:max-w-[370px]  md:h-[395px]
     sm:min-w-[320px] sm:h-[320px]
     w-[300px] h-[300px] py-6 sm:py-8 md:py-12 px-8
@@ -24,7 +27,7 @@ const FeedbackCard = ({item}) => {
                <p className='sm:text-[0.9rem] text-sm text-white/70'>{title}</p>
              </div>
          </div>
-      </div> 
+      </motion.div> 
   )
 }
 

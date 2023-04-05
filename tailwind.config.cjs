@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       raleway : ['Raleway', 'sans-serif'],
+      bowley : ['Bowlby One'  , 'sans-serif']
     },
     extend: {
       screens: {
