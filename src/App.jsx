@@ -13,8 +13,7 @@ import {
 } from "./comp";
 import styles from "./styles";
 import { Link } from "react-scroll";
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import Loader from "./comp/Loader";
+import { AnimatePresence,  motion } from "framer-motion";
 
 function App() {
   const [showScrolltoTopBtn, setShowScrolltoTopBtn] = useState(false);
@@ -33,13 +32,7 @@ function App() {
   }, []);
 
   return (
-    <LayoutGroup type='crossfade' >
-
-    {loading ? (
-      <motion.div key='loader' className="min-h-screen" layoutId="main-layout" >
-        <Loader setLoading={setLoading} />
-      </motion.div>
-    ):(
+    
       <div layoutId="main-layout"  className="bg-[#00040f] font-raleway overflow-hidden text-white w-full ">
       
 
@@ -113,9 +106,7 @@ function App() {
         </div>
       </div>
     </div>
-    )}
-    
-    </LayoutGroup>
+   
   );
 }
 

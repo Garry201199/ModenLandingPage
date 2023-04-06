@@ -25,7 +25,7 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import robot1 from "./robot1.png";
 import quote from "./quote.svg";
-import bill1 from "./bill Compressed.png";
+import bill1 from "./bill1.png";
 import card1 from "./card1.png";
 
 export {
