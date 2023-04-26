@@ -10,6 +10,16 @@ module.exports = {
       bowley : ['Bowlby One'  , 'sans-serif']
     },
     extend: {
+      keyframes:{
+        rotate:{
+          '0%': { transform: 'rotate(0.0deg)' },
+          '50%': {scale : '1 1.3' },
+          '100%': { transform: 'rotate(360.0deg)' },
+        }
+      },
+      animation: {
+        'rotating-blob': 'rotate 5s  infinite',
+      },
       screens: {
         xs: "480px",
         ss: "620px",

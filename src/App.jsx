@@ -31,12 +31,26 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+  const blob = document.getElementById('movingBlob')
+
+    document.body.onpointermove = e =>{
+      const { clientX, clientY } = e
+      blob.animate({
+        left : `${clientX}px`,
+        top : `${clientY}px`,
+      }, {duration : 3000 , fill : "forwards" })
+    }
+   
+  }, [document.body.onpointermove])
+  
+
   return (
     
-      <div layoutId="main-layout"  className="bg-[#00040f] font-raleway overflow-hidden text-white w-full ">
+      <div   className="bg-[#00040f] font-raleway overflow-hidden text-white w-full ">
       
-
-      
+      <div id="movingBlob" className="blob animate-rotating-blob "  ></div>
+      {/* <div className="h-[100%] fixed z-[-1] w-[100%] backdrop-blur-3xl " ></div> */}
       <AnimatePresence>
         {showScrolltoTopBtn && (
           <motion.div
@@ -81,7 +95,7 @@ function App() {
         )}
       </AnimatePresence>
 
-      <div id="top" className={`${styles.flexCenter}  ${styles.paddingX} `}>
+      <div id="top" className={`${styles.flexCenter} ${styles.paddingX} `}>
         <div className={`${styles.boxwidth}`}>
           <Navbar />
         </div>

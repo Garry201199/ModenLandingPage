@@ -5,7 +5,7 @@ import Button from './Button'
 
 const Buisness = () => {
   return (
-    <section className={`${styles.paddingY} mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 gap-y-6 flex sm:flex-row flex-col items-center justify-center   `} >
+    <section className={`${styles.paddingY} z-[2] mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 gap-y-6 flex sm:flex-row flex-col items-center justify-center   `} >
       <div className="flex flex-1 flex-col gap-y-6 flex-start  ">
         <p  className='md:text-[3.5rem] sm:text-[2.5rem] text-[2rem] leading-normal sm:leading-tight font-bold' >You do the business, we’ll handle the money.</p>
         <p className='sm:text-[1.2rem] w-full sm:w-[80%] text-start text-white/80'>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
